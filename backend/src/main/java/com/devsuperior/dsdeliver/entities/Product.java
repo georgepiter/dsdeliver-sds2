@@ -1,7 +1,6 @@
 package com.devsuperior.dsdeliver.entities;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -98,7 +97,6 @@ public class Product implements Serializable{
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-	}
-	
+	}	
 
 }
