@@ -7,23 +7,21 @@ import { ReactComponent as InstagramIcon } from './instagram.svg'
 function Footer() {
     return (
         <footer className="main-footer">
-            App desenvolvido durante a 2ª ed. do evento Semana DevSuperior
-          <div className="footer-icons">
-           <a href="linkaqui" target="_new">
-               <YoutubeIcon />
+            Software Web desenvolvido durante a 2ª ed. do evento Semana DevSuperior <br /> By George Piter
+            <div className="footer-icons">
+                <a href="linkaqui" target="_new">
+                    <YoutubeIcon />
+                </a>
 
-           </a>
-           <a href="https://www.linkedin.com/in/gpiter" target="_new">
-              <LinkedinIcon />
+                <a href="https://www.linkedin.com/in/gpiter" target="_new">
+                    <LinkedinIcon />
+                </a>
 
-           </a>
+                <a href="linkaqui" target="_new">
+                    <InstagramIcon />
+                </a>
 
-           <a href="linkaqui" target="_new">
-              <InstagramIcon />
-
-           </a>
-
-          </div>
+            </div>
         </footer>
     )
 }

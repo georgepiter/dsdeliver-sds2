@@ -31,7 +31,7 @@
   }
   
   .home-btn-order {
-    background-color: var(--primary-color);
+    background-color: #dc2c00;
     border-radius: 10px;
     height: 70px;
     width: 235px;
@@ -46,8 +46,8 @@
   }
   
   .home-btn-order:hover {
-    background-color: var(--primary-hover-color);
-    transform: scale(1.01);
+    background-color: #bf0a0aaf;
+    transform: scale(1.20);
   }
   
   .home-image svg {
