@@ -7,7 +7,7 @@ import { ReactComponent as InstagramIcon } from './instagram.svg'
 function Footer() {
     return (
         <footer className="main-footer">
-            Software Web desenvolvido durante a 2ª ed. do evento Semana DevSuperior <br /> By George Piter
+            Software Web desenvolvido durante a 2ª ed. do evento Semana DevSuperior <br/> George Piter
             <div className="footer-icons">
                 <a href="linkaqui" target="_new">
                     <YoutubeIcon />

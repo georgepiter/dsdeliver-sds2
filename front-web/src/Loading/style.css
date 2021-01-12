@@ -1,0 +1,8 @@
+.section-loading {
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    display: flex;
+}

@@ -4,7 +4,8 @@
   --primary-color: #da5c5c;
   --primary-hover-color: #a74b4b;
   --dark-color: #263238;
-  --secondary-color: #9E9E9E;
+  --secondary-color: #000000;
+  --font-weight: bold;
   --light-color: #F5F5F5;
 }
 

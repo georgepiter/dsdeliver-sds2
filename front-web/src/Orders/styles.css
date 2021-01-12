@@ -15,7 +15,7 @@
   
   .orders-steps-content {
     display: flex;
-    padding: 25px 0;
+    padding: 10px 0;
     width: 70%;
     background-color: #ffffff;
 
@@ -23,11 +23,12 @@
   
   .steps-title {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 34px;
     letter-spacing: -0.015em;
-    color: #000000;
+    color: #000000af;
     margin-right: 100px;
+    margin-left: 10px;
   }
   
   .steps-itens {
@@ -37,8 +38,8 @@
   }
   
   .steps-itens li {
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 16px;
     line-height: 25px;
     letter-spacing: -0.015em;
     background-color: #ffffff;
@@ -49,7 +50,7 @@
   .steps-itens .steps-number {
     font-size: 24px;
     font-style: normal;
-    font-weight: initial ;
+    font-weight: bold ;
     line-height: 33px;
     letter-spacing: -0.015em;
     color: #000000;
@@ -64,15 +65,15 @@
   }
   
   .orders-list-itens {
-    width: 70%;
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 235px);
+    grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 20px 15px;
     justify-content: space-between;
   }
   
   .order-card-container {
-    background-color: #d9e9e4;
+    background-color: #F6EFEE;
     box-shadow: 0px 4px 20px #000000f3;
     border-radius: 10px;
     padding: 15px;
@@ -112,7 +113,7 @@
   
   .order-card-price {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 33px;
     letter-spacing: -0.015em;
     color: var(--primary-color);
@@ -140,8 +141,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    letter-spacing: -0.015em;
-  
+    letter-spacing: -0.015em;  
     color: var(--secondary-color);
   }
   
@@ -152,8 +152,17 @@
 
   }
   
+  toast {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.015em;  
+    color: black;
+
+  }
+  
   .order-location-content {
-    width: 70%;
+    width: 80%;
     margin: 30px 0 120px 0;
     padding: 20px 0;
     height: 400px;
@@ -203,13 +212,13 @@
   }
   
   .order-summary-content {
-    width: calc(70% - 40px);
+    width: calc(80% - 40px);
     display: flex;
     justify-content: space-between;
     background: #000000;
     box-shadow: 0px 4px 20px #e9e4e440;
     border-radius: 10px;
-    background-color: #076342;
+    background-color: #2E2A29;
     color: #fbf8f8;
     padding: 20px;
   }
@@ -252,7 +261,7 @@
   .order-summary-make-order {
     width: 220px;
     height: 45px;
-    background: #7d1b1b ;
+    background: #E64141 ;
     border-radius: 10px;
     font-weight: bold;
     font-size: 18px;
@@ -269,7 +278,7 @@
   }
   
   .order-summary-make-order:hover {
-    background-color: #a91010;
+    background-color: #bb8989;
     transform: scale(1.08);
   }
   
