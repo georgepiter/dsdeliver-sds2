@@ -3,6 +3,7 @@
     justify-content: center;
     width: 100%;
     align-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: initial;
     display: flex;
+    
 }

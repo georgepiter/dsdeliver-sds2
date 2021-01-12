@@ -151,16 +151,7 @@
     background-color:#fff;
 
   }
-  
-  toast {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: -0.015em;  
-    color: black;
-
-  }
-  
+    
   .order-location-content {
     width: 80%;
     margin: 30px 0 120px 0;

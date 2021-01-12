@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { fetchProducts, saveOrder } from '../api';
 import Footer from '../Footer';
+import Loading from '../Loading/Loading';
 import { checkIsSelected } from './helpers';
 import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
@@ -10,20 +11,24 @@ import StepsHeader from './StepsHeader';
 import './styles.css';
 import { OrderLocationData, Product } from './types';
 
+
 function Orders() {
   const [products, setProducts] = useState<Product[]>([]);
   const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
   const [orderLocation, setOrderLocation] = useState<OrderLocationData>();
+  const [done, setDone] = useState(false);
   const totalPrice = selectedProducts.reduce((sum, item) => {
     return sum + item.price;
   }, 0);
 
 
   useEffect(() => {
-    fetchProducts()
-      .then(Response => setProducts(Response.data))
-      .catch(error => console.log(error));
-  }, []);
+    setTimeout(() => {
+      fetchProducts()
+        .then(response => { setProducts(response.data); setDone(true); })
+        .catch(error => { toast.warning("Error ao carregar os dados do servidor, favor atualize a pagina." + error); })
+    }, 1200);
+  }, [])
 
   const handleSelectProduct = (product: Product) => {
     const isAlreadySelected = checkIsSelected(selectedProducts, product);
@@ -60,16 +65,19 @@ function Orders() {
     <>
       <div className="orders-container">
         <StepsHeader />
+      <div>
+      {!done ? (<Loading />) : (
+        <>
         <ProductsList products={products}
           onselectProduct={handleSelectProduct}
-          selectedProducts={selectedProducts}
-        />
-        <OrderLocation onChangeLocation={location => setOrderLocation(location)}
-        />
+          selectedProducts={selectedProducts}/>
+        <OrderLocation onChangeLocation={location => setOrderLocation(location)}/>
         <OrderSummary amount={selectedProducts.length}
           totalPrice={totalPrice}
-          onSubmit={handleSubmit}
-        />
+          onSubmit={handleSubmit} />
+      </>
+      )}
+      </div>
       </div>
       <Footer />
     </>
