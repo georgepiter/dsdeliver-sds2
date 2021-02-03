@@ -12,7 +12,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Banco de dados - PostGresql
 - [x] Back End - Java com Spring Boot
 - [x] Front End Web - JavaScript/TypeScript 
-- [ ] Front Web - Mobile - React Native  - Em desenvolvimento
+- [X] Front Web - Mobile - React Native  - Em processo de ajuste do CSS,cores e correção de bugs(Andamento)
 
 
 ## 💻 Pré-requisitos
