@@ -5,14 +5,23 @@
 <img src="https://github.com/georgepiter/dsdeliver-sds2/blob/main/front-web/public/home.png" alt="my logo mapa"/>
 <img src="https://github.com/georgepiter/dsdeliver-sds2/blob/main/front-web/public/pedidos.png" alt="my logo pedidos"/>
 
+
+
+## 📱 App perfil do entregador: 
+
+
+
+<img src="https://github.com/georgepiter/dsdeliver-sds2/blob/main/front-mobile/assets/app_mobile.jpg" alt="my home app"/>
+
+
 ### Ajustes e melhorias:
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+Projeto finalizado e está em constante atualização.
 
 - [x] Banco de dados - PostGresql
 - [x] Back End - Java com Spring Boot
-- [x] Front End Web - JavaScript/TypeScript 
-- [X] Front Web - Mobile - React Native  - Em processo de ajuste do CSS,cores e correção de bugs(Andamento)
+- [x] Front End Web - ReactJs 
+- [X] Front Web - Mobile - React Native
 
 
 ## 💻 Pré-requisitos
