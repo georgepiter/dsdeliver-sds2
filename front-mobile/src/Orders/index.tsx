@@ -1,13 +1,14 @@
+import React, { constructor, useEffect, useState } from 'react';
 import { useIsFocused, useNavigation } from '@react-navigation/native';
-import React, { useEffect, useState } from 'react';
-import { Alert, ScrollView, StyleSheet } from 'react-native';
+import { Alert, ScrollView, Text, View } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { fetchOrders } from '../api';
-import Header from '../Header';
 import OrderCard from '../OrderCard';
 import { Order } from '../type';
+import Header from '../Header';
+import styles from '../Orders/styles';
 
-function Orders() {
+export default function Orders() {
   const [orders, setOrders] = useState<Order[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const navigation = useNavigation();
@@ -22,34 +23,33 @@ function Orders() {
   }
 
   useEffect(() => {
-    if(isFocused) {
+    if (isFocused) {
       fetchData();
     }
-  }, [isFocused]);
+  }, [isFocused])
 
   const handleOnPress = (order: Order) => {
-        navigation.navigate('OrderDetails', {order})
-  }  
+    navigation.navigate('OrderDetails', { order })
+  }
 
   return (
     <>
-      <Header/>
+      <Header />
       <ScrollView style={styles.container}>
-        {(orders.map(order => (
-             <TouchableWithoutFeedback key={order.id} onPress={() => handleOnPress(order)}>
-               <OrderCard order={order} />
-             </TouchableWithoutFeedback>
+        {isLoading ? (
+
+          <View>
+            <Text style={styles.loading}>Carregando Pedidos...</Text>
+            <View style={styles.progressBar}></View>
+          </View>)
+          : (orders.map(order => (
+            <TouchableWithoutFeedback key={order.id} onPress={() => handleOnPress(order)}>
+              <OrderCard order={order} />
+            </TouchableWithoutFeedback>
           )))}
       </ScrollView>
     </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    paddingRight: '5%',
-    paddingLeft: '5%'
-  }
-});
 
-export default Orders;

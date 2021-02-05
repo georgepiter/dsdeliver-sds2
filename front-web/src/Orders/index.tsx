@@ -65,19 +65,19 @@ function Orders() {
     <>
       <div className="orders-container">
         <StepsHeader />
-      <div>
-      {!done ? (<Loading />) : (
-        <>
-        <ProductsList products={products}
-          onselectProduct={handleSelectProduct}
-          selectedProducts={selectedProducts}/>
-        <OrderLocation onChangeLocation={location => setOrderLocation(location)}/>
-        <OrderSummary amount={selectedProducts.length}
-          totalPrice={totalPrice}
-          onSubmit={handleSubmit} />
-      </>
-      )}
-      </div>
+        <div>
+          {!done ? (<Loading />) : (
+            <>
+              <ProductsList products={products}
+                onselectProduct={handleSelectProduct}
+                selectedProducts={selectedProducts} />
+              <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
+              <OrderSummary amount={selectedProducts.length}
+                totalPrice={totalPrice}
+                onSubmit={handleSubmit} />
+            </>
+          )}
+        </div>
       </div>
       <Footer />
     </>

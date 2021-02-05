@@ -13,13 +13,13 @@ function ProductsList({ products, selectedProducts, onselectProduct }: Props) {
     return (
         <div className="orders-list-container">
             <div className="orders-list-itens">
-               {products.map(product =>(
-                   <ProductCard key={product.id}
-                    product={product}
-                    onselectProduct={onselectProduct}
-                    isSelected={checkIsSelected(selectedProducts, product)}
-                     />
-               ))}
+                {products.map(product => (
+                    <ProductCard key={product.id}
+                        product={product}
+                        onselectProduct={onselectProduct}
+                        isSelected={checkIsSelected(selectedProducts, product)}
+                    />
+                ))}
             </div>
         </div>
     )

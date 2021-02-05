@@ -3,12 +3,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "./Home";
 import Orders from "./Orders";
-import OrderDetails from "./OrderDetails";
-
+import OrderDetails from "./OrderCard/OrderDetails";
 
 const Stack = createStackNavigator();
 
-function Routes() {
+export default function Routes() {
     return (
         <NavigationContainer>
             <Stack.Navigator 
@@ -17,7 +16,7 @@ function Routes() {
                 cardStyle: {
                 backgroundColor: '#FFF'
                 }
-            }}>                
+        }}>                
             <Stack.Screen name="Home" component={Home}></Stack.Screen>
             <Stack.Screen name="Orders" component={Orders}></Stack.Screen>
             <Stack.Screen name="OrderDetails" component={OrderDetails}></Stack.Screen>
@@ -25,5 +24,3 @@ function Routes() {
         </NavigationContainer>
     )
 }
-
-export default Routes;

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import styles from '../Header/styles';
 
-function Header() {
+export default function Header() {
 const navigation = useNavigation();
 
 const handleOnPress = () => {
@@ -21,28 +22,3 @@ const handleOnPress = () => {
   );
 }
 
-const styles = StyleSheet.create({
-
-  container: {
-    backgroundColor: '#dba74d',
-    height: 115,
-    paddingTop: 80,
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-
-  text: {
-    fontWeight: 'bold',
-    fontSize: 20,
-    lineHeight: 40,
-    letterSpacing: -0.24,
-    color: '#FFF',
-    marginLeft: 15,
-    fontFamily: 'OpenSans_700Bold'
-
-
-  }
-});
-
-
-export default Header;

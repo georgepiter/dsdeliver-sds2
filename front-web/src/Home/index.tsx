@@ -1,7 +1,7 @@
-import './style.css';
-import { ReactComponent as MainImage } from './main.svg';
-import Footer from '../Footer';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
+import { ReactComponent as MainImage } from './main.svg';
+import './style.css';
 
 function Home() {
     return (
@@ -10,7 +10,7 @@ function Home() {
                 <div className="home-content">
                     <div className="home-actions">
                         <h1 className="home-title">
-                            Faça seu pedido <br /> que entregamos <br /> 
+                            Faça seu pedido <br /> que entregamos <br />
                             pra você!!!
                        </h1>
                         <h3 className="home-subtitle">

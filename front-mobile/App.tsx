@@ -5,7 +5,6 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import Routes from './src/Routes';
 
-
 export default function App() {
   let [fontsLoaded] = useFonts({
     OpenSans_400Regular,
