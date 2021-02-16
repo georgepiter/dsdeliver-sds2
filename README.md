@@ -18,9 +18,9 @@
 
 Projeto finalizado e está em constante atualização.
 
-- [x] Banco de dados - PostGresql
-- [x] Back End - Java com Spring Boot
-- [x] Front End Web - ReactJs 
+- [x] Banco de dados - PostGresql 
+- [x] Back End - Java com Spring Boot -- Implantado no Heroku
+- [x] Front End Web - ReactJs -- Implantado no netlify
 - [X] Front Web - Mobile - React Native
 
 
